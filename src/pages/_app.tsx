@@ -23,14 +23,12 @@ const MyApp: AppType<{ session: Session | null }> = ({
         fontSans.variable,
       )}
     >
-      <main className=" flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#ffa65d] to-[#dac029]">
+      <SideNavbar />
+      <div className=" flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#ffa65d] to-[#dac029]">
         <SessionProvider session={session}>
-          <div>
-            <SideNavbar />
-          </div>
           <Component {...pageProps} />
         </SessionProvider>
-      </main>
+      </div>
     </body>
   );
 };
