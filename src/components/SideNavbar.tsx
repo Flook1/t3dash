@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Nav } from "./ui/nav";
 import { Button } from "./ui/button";
+import Image from "next/image";
 import {
   UsersRound,
   LayoutDashboard,
@@ -35,6 +36,12 @@ export default function SideNavbar({}: Props) {
           </Button>
         </div>
       )}
+      <Image
+        src="https://github.com/Flook1/t3dash/blob/main/public/IE.png"
+        width={500}
+        height={500}
+        alt="Picture of the author"
+      />
       <Nav
         isCollapsed={mobileWidth ? true : isCollapsed}
         links={[
