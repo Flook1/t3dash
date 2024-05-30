@@ -1,13 +1,6 @@
-"use client";
-
 import React, { useState } from "react";
 import { Nav } from "./ui/nav";
 import { Button } from "./ui/button";
-
-import { useWindowWidth } from "@react-hook/window-size";
-
-type Props = {};
-
 import {
   UsersRound,
   LayoutDashboard,
@@ -15,6 +8,9 @@ import {
   Settings,
   ChevronRight,
 } from "lucide-react";
+import { useWindowWidth } from "@react-hook/window-size";
+
+type Props = Record<string, never>;
 
 export default function SideNavbar({}: Props) {
   const [isCollapsed, setIsCollapsed] = useState(false);
